@@ -1,0 +1,619 @@
+/* global rules */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* start navbar */
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar .navbar-brand span {
+    font-weight: normal;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #c5c5c5;
+}
+
+
+/* strt header */
+
+header {
+    background-image: url('../images/header.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    color: #fff
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+header .overlay .row {
+    margin-top: 25vh
+}
+
+header h1 {
+    font-size: 60px;
+    margin-top: 0
+}
+
+header h3 {
+    font-size: 35px;
+}
+
+header h1 ~ h3:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 14%;
+    background: #fff;
+    margin: 47px 0;
+}
+
+header h3 ~ p {
+    font-size: 16px;
+    color: #c5c5c5;
+}
+
+header button {
+    background-color: transparent;
+    padding: 11px 29px;
+    border: 2px solid #fff;
+    display: block;
+    margin-top: 30px;
+}
+
+header form {
+    width: 78%;
+    margin: auto;
+    background: #fff;
+    overflow: hidden
+}
+
+header form h4 {
+    background: #f5f5f5;
+    color: #000;
+    margin: 0;
+    padding: 20px 0;
+    margin-bottom: 30px
+}
+
+header form h4 span {
+    font-weight: normal
+}
+
+header form input:not([type="submit"]) {
+    width: 70%;
+    margin: auto;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 35px;
+    color: #ccc;
+}
+
+header form input[type="submit"] {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #fff;
+    padding: 10px;
+    height: 57px;
+    font-size: 21px;
+    opacity: 0.9
+}
+
+
+/* start social*/
+
+.social {
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.social h3 {
+    color: rgb( 51, 51, 51);
+    text-transform: capitalize
+}
+
+.social p {
+    color: #c5c5c5;
+}
+
+.social i {
+    display: block;
+    float: left;
+    width: 14.2%;
+    margin-top: 35px;
+    color: #CCC
+}
+
+
+/* start tabs */
+
+.tabs {
+    padding: 80px 0;
+    background: #f5f5f5
+}
+
+.tabs .tabs-wrapper li {
+    width: 100%;
+    background: #252525;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 45px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.tabs .tabs-wrapper li.active {
+    background: #ff8b38
+}
+
+.tabs .tabs-content {
+    margin-left: 50px;
+}
+
+.tabs .tabs-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    line-height: 2;
+}
+
+.tabs .tabs-content button {
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    background: #ff8b38;
+    padding: 10px 27px;
+    color: #fff;
+    margin-top: 50px
+}
+
+
+/* stat sub list*/
+
+.sub-list {
+    padding: 100px 0;
+    background: #fff
+}
+
+.sub-list .sublist-image {
+    margin-top: 25px;
+}
+
+.sub-list .sublist-content h2 {
+    margin-top: 0;
+}
+
+.sub-list .sublist-content > p {
+    color: #c5c5c5;
+    font-size: 18px;
+    margin-bottom: 30px
+}
+
+.sub-list .sublist-content .sublist-icon div {
+    float: left;
+    margin-bottom: 20px
+}
+
+.sub-list .sublist-content .sublist-icon div:first-of-type {
+    width: 15%;
+}
+
+.sub-list .sublist-content .sublist-icon div:last-of-type {
+    width: 85%;
+}
+
+.sub-list .sublist-content .sublist-icon div i {
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 22px
+}
+
+.sub-list .sublist-content .sublist-icon div h4 {
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.sub-list .sublist-content .sublist-icon div p {
+    color: #c5c5c5;
+}
+
+.standard-picture {
+    padding: 80px 0;
+    background: #f5f5f5
+}
+
+.standard-picture .standard-picture-content > p {
+    color: #a6a7a9;
+    font-size: 18px;
+    margin-bottom: 30px
+}
+
+.standard-picture .standard-picture-image img {
+    display: block;
+    float: right
+}
+
+
+/* start WHY THIS IS AWESOME */
+
+.awesome {
+    padding: 100px 0;
+}
+
+.awesome .border-head:after {
+    margin: 30px auto;
+}
+
+.awesome h2 ~ p {
+    color: #8f9094;
+    margin-bottom: 50px
+}
+
+.awesome .featurs i {
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 56px;
+}
+
+.awesome .featurs h3 {
+    margin: 20px 0;
+}
+
+.awesome .featurs p {
+    color: #a1a2a5;
+    line-height: 1.5
+}
+
+
+/* start price options*/
+
+.price {
+    padding: 100px 0;
+    background: #f5f5f5
+}
+
+.price .border-head:after {
+    margin: 30px auto;
+}
+
+.price h2 ~ p {
+    color: #8f9094;
+    margin-bottom: 50px
+}
+
+.price .row > div:nth-of-type(odd) {
+    margin-top: 46px
+}
+
+.price .price-name {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 27px;
+    border-bottom: 1px solid #fff;
+    margin: 0
+}
+
+.price .price-wrapper {
+    background: #333;
+    color: #fff;
+    border-bottom: 5px solid #ff8b38;
+}
+
+.price .price-wrapper span.usd-sign {
+    font-size: 30px
+}
+
+.price .price-wrapper span.price-usd {
+    font-size: 60px
+}
+
+.price .price-wrapper span.time {
+    display: block;
+    color: #b1b1b1;
+    font-style: italic;
+    margin: 15px;
+    font-size: 16px
+}
+
+.price .popular {
+    color: #fff;
+    padding: 8px;
+    margin: 0
+}
+
+.price ul {
+    background: #fff
+}
+
+.price ul li {
+    color: #b0b0b0;
+    border-bottom: 1px solid #CCC;
+    padding: 8px;
+}
+
+
+/* start clients say */
+
+.clients-say {
+    padding: 100px 0;
+}
+
+.clients-say .border-head:after {
+    margin: 30px auto;
+}
+
+.clients-say h2 ~ p {
+    color: #8f9094;
+    margin-bottom: 50px
+}
+
+.clients-say p.client-say {
+    background: #f5f5f5;
+    color: #c3c3c5;
+    padding: 20px;
+    font-size: 17px;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 25px
+}
+
+.clients-say p.client-say:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #f5f5f5 transparent transparent;
+    position: absolute;
+    bottom: -29px;
+    left: 30px;
+}
+
+.clients-say .media-object {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.clients-say .media-heading {
+    font-size: 23px;
+}
+
+.clients-say .media-heading ~ .job {
+    display: block;
+    color: #aaa;
+    font-size: 16px;
+}
+
+
+/* start STYLISH AXURE DESIGN*/
+
+.stylish {
+    background-image: url('../images/stylesh.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    color: #FFF
+}
+
+.stylish .overlay {
+    padding: 50px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.stylish .border-head:after {
+    margin: 30px auto;
+    background: #fff
+}
+
+.stylish h2 ~ p {
+    color: #8f9094;
+    margin-bottom: 50px
+}
+
+.stylish button {
+    background-color: transparent;
+    padding: 11px 29px;
+    border: 2px solid #fff;
+    display: block;
+    margin: 30px auto;
+}
+
+
+/* start contact us */
+
+.contact-us {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.contact-us .border-head:after {
+    margin: 30px auto;
+}
+
+.contact-us h2 ~ p {
+    color: #86878b;
+    margin-bottom: 50px
+}
+
+.contact-us form input:not([type="submit"]),
+.contact-us textarea {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 35px;
+    color: #ccc;
+}
+
+.contact-us textarea {
+    margin-top: 15px;
+    height: 156px;
+    resize: none;
+}
+
+.contact-us input[type="submit"] {
+    display: block;
+    color: #fff;
+    margin: auto;
+    padding: 10px 20px
+}
+
+
+/* start footer */
+
+footer {
+    background: #000;
+    padding-top: 20px;
+}
+
+footer i {
+    color: #ccc;
+    margin-right: 20px;
+    margin-bottom: 10px
+}
+
+footer .copy {
+    margin: 0;
+    color: #969696
+}
+
+
+/* start framework */
+
+.border-head {}
+
+.border-head:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 14%;
+    margin: 30px 0;
+    background: #ff8b38
+}
+
+.main-color {
+    color: #ff8b38
+}
+
+.main-back {
+    background: #ff8b38
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* start media */
+
+@media (max-width: 767px) {
+    /* social */
+    .social i {
+        width: 33.333%
+    }
+    .social i:last-of-type {
+        width: 100%
+    }
+    .sub-list .sublist-content .sublist-icon div:last-of-type {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 991px) {
+    /* header */
+    header {
+        height: 1000px;
+    }
+    header .overlay .row {
+        margin-top: 15px
+    }
+    header h1,
+    header h3,
+    header h3 ~ p {
+        text-align: center
+    }
+    header h1 ~ h3:after {
+        margin: 47px auto;
+    }
+    header button {
+        margin-top: 0;
+        margin: 30px auto;
+    }
+    header form {
+        width: 100%;
+        margin-top: 20px
+    }
+    /* tabs */
+    .tabs .tabs-wrapper {
+        margin-bottom: 40px
+    }
+    .tabs .tabs-content {
+        margin-left: 0
+    }
+    .tabs .tabs-content button {
+        margin-bottom: 15px
+    }
+    /* sub list*/
+    .sub-list .sublist-image {
+        margin-bottom: 30px
+    }
+    .featurs {
+        margin-bottom: 30px
+    }
+    .price ul,
+    .media {
+        margin-bottom: 20px
+    }
+    .price .row > div:nth-of-type(odd) {
+        margin-top: 0
+    }
+}
+
+@media (min-width:992px) and (max-width: 1199px) {
+    .tabs .tabs-wrapper li {
+        font-size: 15px
+    }
+}
